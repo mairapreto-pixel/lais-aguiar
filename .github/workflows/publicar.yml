@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Separar os arquivos do site
-        run: mkdir site && cp -r index.html fotos site/
+        run: mkdir site && cp -r index.html fotos compartilhar.png site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
