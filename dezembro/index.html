@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>lais aguiar · feed de dezembro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#F6F1E8;font-family:Inter,Arial,sans-serif;color:#1C241F}
+button{font:inherit;color:inherit}
+.app{max-width:430px;margin:0 auto;background:#fff;min-height:100vh;min-height:100dvh}
+.bar{position:sticky;top:0;z-index:2;background:#fff;height:52px;display:flex;align-items:center;gap:6px;padding:0 14px;border-bottom:1px solid #EFEAE2}
+.bar b{font-size:16px;font-weight:600}
+.ic{width:44px;height:44px;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-left:-10px}
+.perfil{padding:14px 16px 10px;display:flex;flex-direction:column;gap:10px}
+.topo{display:flex;align-items:center;gap:22px}
+.topo img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:50% 30%}
+.nums{display:flex;gap:28px;text-align:center}.nums p{margin:0;font-size:13px}.nums strong{display:block;font-size:16px;font-weight:600}
+.bio p{margin:0;font-size:13.5px;line-height:1.38}
+.rubens{font-family:'Barlow Semi Condensed',Arial,sans-serif;font-weight:600;font-size:11.5px!important;letter-spacing:.3em;text-transform:uppercase;color:#4A6650;padding:2px 0}
+.verde{color:#4A6650;font-weight:500}
+.botoes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.botoes span{background:#EFEAE2;border-radius:8px;padding:7px 0;text-align:center;font-size:13px;font-weight:600}.botoes span:first-child{background:#4A6650;color:#F6F1E8}
+.dest{display:flex;gap:16px;padding-top:6px}.dest div{display:flex;flex-direction:column;align-items:center;gap:5px;width:56px}.dest i{display:block;width:56px;height:56px;border-radius:50%;border:1px solid #C9C0B2;padding:3px}.dest i span{display:block;width:100%;height:100%;border-radius:50%}.dest p{margin:0;font-size:10.5px;white-space:nowrap}
+.abas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #EFEAE2}.abas div{display:flex;justify-content:center;padding:9px 0}.abas div:first-child{border-bottom:1.5px solid #1C241F}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.tile{position:relative;aspect-ratio:3/4;padding:0;border:0;cursor:pointer;overflow:hidden}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile svg{position:absolute;top:8px;right:8px}
+.antigo{aspect-ratio:3/4;background:#F1ECE4}
+.post{padding-bottom:22px}
+.ph{display:flex;align-items:center;gap:10px;padding:10px 14px}.ph img{width:32px;height:32px;border-radius:50%;object-fit:cover;object-position:50% 30%}.ph b{font-size:13.5px;font-weight:600;flex:1}
+.midia{position:relative;width:100%;overflow:hidden;background:#EFEAE2;touch-action:pan-y}
+.trilho{display:flex;height:100%;transition:transform .4s ease}
+.slide{position:relative;flex:0 0 100%;height:100%}.slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;user-select:none}
+.acoes{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 4px}.acoes>div{display:flex;gap:14px;width:96px}
+.pontos{display:flex;gap:2px}.pontos button{width:12px;height:22px;padding:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}.pontos span{width:6px;height:6px;border-radius:50%;background:#C9C0B2}.pontos .on span{background:#4A6650}
+.leg{margin:0;padding:6px 14px 0;font-size:13.5px;line-height:1.45}.leg b{font-weight:600}
+.data{margin:0;padding:6px 14px 0;font-size:11.5px;color:#6B6157}
+.oculto{display:none}
+</style>
+</head>
+<body>
+<div class="app">
+<section id="perfil">
+<div class="bar"><b style="flex:1">laisaguiar.rubens</b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div>
+<div class="perfil">
+<div class="topo"><img src="img/retrato.jpg" alt="Laís Aguiar"><div class="nums"><p><strong>1.069</strong>posts</p><p><strong>58 mil</strong>seguidores</p></div></div>
+<div class="bio"><p style="font-weight:600">Laís Aguiar</p><p>Arquiteta, festas e flores</p><p class="rubens">Rubens Decorações</p><p>rubens@rubens.com.br · +55 11 3815-3888</p><p class="verde">rubensdecoracoes.com.br</p></div>
+<div class="botoes"><span>Seguir</span><span>Mensagem</span><span>Contato</span></div>
+<div class="dest" id="dest"></div>
+</div>
+<div class="abas"><div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></div><div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A8378" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></div><div><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A8378" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="9" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div></div>
+<div class="grade" id="grade"></div>
+</section>
+<section id="posts" class="oculto">
+<div class="bar"><button class="ic" id="voltar" aria-label="Voltar para o perfil"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.8" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><div><p style="margin:0;font-size:11.5px;color:#6B6157;text-transform:uppercase;letter-spacing:.04em">laisaguiar.rubens</p><b>Publicações</b></div></div>
+<div id="lista"></div>
+</section>
+</div>
+<script>
+var POSTS = [{"n": "01", "dia": "Ter · 01/12", "fmt": "Carrossel", "titulo": "Uma festa recente, em fotos", "bg": "#D9CDB6", "slides": [["A festa pronta, em plano geral", "#D9CDB6"], ["A mesa posta", "#E9DDD0"], ["As flores, de perto", "#4A6650"], ["Um detalhe da decoração", "#E9DDD0"], ["O espaço, em plano aberto", "#D9CDB6"]], "legenda": "O casal ou a festa, e uma cena em uma ou duas frases, na voz da Laís. Depois os créditos e os fornecedores."}, {"n": "02", "dia": "Qui · 03/12", "fmt": "Vídeo", "titulo": "Uma festa recente, em vídeo", "bg": "#E9DDD0", "legenda": "O casal ou a festa e a ideia em uma frase. Depois os créditos e os fornecedores."}, {"n": "03", "dia": "Sáb · 05/12", "fmt": "Carrossel", "titulo": "Uma festa recente, em fotos", "bg": "#4A6650", "slides": [["A festa pronta, em plano geral", "#4A6650"], ["A mesa posta", "#E9DDD0"], ["As flores, de perto", "#D9CDB6"], ["Um detalhe da decoração", "#E9DDD0"], ["O espaço, em plano aberto", "#4A6650"]], "legenda": "O casal ou a festa, e uma cena em uma ou duas frases, na voz da Laís. Depois os créditos e os fornecedores."}, {"n": "04", "dia": "Ter · 08/12", "fmt": "Reel", "titulo": "Quem somos", "img": "img/reel-quem-somos.jpg", "pos": "50% 50%", "legenda": "Cada festa começa como um projeto. Desenho, luz e flores pensados juntos, do primeiro encontro à montagem."}, {"n": "05", "dia": "Qui · 10/12", "fmt": "Vídeo", "titulo": "Uma festa recente, em vídeo", "bg": "#D9CDB6", "legenda": "O casal ou a festa e a ideia em uma frase. Depois os créditos e os fornecedores."}, {"n": "06", "dia": "Sáb · 12/12", "fmt": "Carrossel", "titulo": "Uma festa recente, em fotos", "bg": "#E9DDD0", "slides": [["A festa pronta, em plano geral", "#E9DDD0"], ["A mesa posta", "#D9CDB6"], ["As flores, de perto", "#D9CDB6"], ["Um detalhe da decoração", "#E9DDD0"], ["O espaço, em plano aberto", "#E9DDD0"]], "legenda": "O casal ou a festa, e uma cena em uma ou duas frases, na voz da Laís. Depois os créditos e os fornecedores."}, {"n": "07", "dia": "Ter · 15/12", "fmt": "Reel", "titulo": "Uma festa contada pela Laís", "bg": "#4A6650", "legenda": "A ideia da festa em uma frase, nas palavras da Laís. Depois Giovana e João, a Casa Charlô, a fotografia de Maíra Preto e os fornecedores marcados."}, {"n": "08", "dia": "Qui · 17/12", "fmt": "Carrossel", "titulo": "Giovana e João, na Casa Charlô", "bg": "#4A6650", "slides": [["A festa pronta, em plano geral", "#4A6650"], ["A mesa posta", "#E9DDD0"], ["As flores, de perto", "#D9CDB6"], ["As velas acesas", "#E9DDD0"], ["O salão, em plano aberto", "#4A6650"]], "legenda": "Giovana e João. Uma cena ou uma escolha da decoração em uma ou duas frases, a partir do que a Laís contou no reel. Depois as marcações dos fornecedores."}, {"n": "09", "dia": "Sáb · 19/12", "fmt": "Vídeo", "titulo": "A casa por dentro", "bg": "#D9CDB6", "legenda": "Por trás de cada festa, a casa: acervo, flores e uma equipe que monta tudo no dia."}, {"n": "10", "dia": "Ter · 22/12", "fmt": "Reel", "titulo": "A flor da estação", "bg": "#E9DDD0", "legenda": "O nome da flor e o que ela traz para a festa, em uma frase. Depois o noivado da Giovana, a fotografia e os fornecedores."}, {"n": "11", "dia": "Sáb · 26/12", "fmt": "Vídeo", "titulo": "O noivado da Giovana", "bg": "#4A6650", "legenda": "O noivado da Giovana em uma frase: a cena que ficou. Depois os créditos e os fornecedores marcados."}, {"n": "12", "dia": "Ter · 29/12", "fmt": "Reel", "titulo": "Quando eu começo a pensar nas flores da festa?", "bg": "#E9DDD0", "legenda": "A resposta da Laís em duas ou três frases, como ela responderia a uma noiva na primeira conversa."}, {"n": "13", "dia": "Qui · 31/12", "fmt": "Carrossel", "titulo": "As festas de 2026", "img": "img/festa.jpg", "pos": "50% 60%", "slides": [["Imagem ilustrativa · Hípica Paulista", null, "img/festa.jpg", "50% 60%"], ["Festa 2 · escolhida pela Laís", "#E9DDD0"], ["Festa 3 · escolhida pela Laís", "#4A6650"], ["Festa 4 · escolhida pela Laís", "#D9CDB6"], ["Festa 5 · escolhida pela Laís", "#E9DDD0"]], "legenda": "Uma linha por festa: o lugar e a cena que ficou. Os casais e os fornecedores marcados."}];
+var SAL='#4A6650',LIN='#E9DDD0';
+var ORDEM = POSTS.map(function(_,i){return i}).reverse();
+var IC_REEL='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 9l5 3-5 3z" fill="#fff"/></svg>';
+var IC_CAR='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="7" y="7" width="14" height="14"/><path d="M3 17V3h14"/></svg>';
+var ACOES='<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3.2-6.4L20 4v5"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>';
+var SALVAR='<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C241F" stroke-width="1.6" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>';
+function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+[['Laís + Pri',LIN],['Festas',SAL],['Bouquets',LIN],['Flores',SAL],['Noivas',LIN]].forEach(function(d){
+  document.getElementById('dest').appendChild(el('div',null,'<i><span style="background:'+d[1]+'"></span></i><p>'+d[0]+'</p>'));
+});
+var grade=document.getElementById('grade');
+ORDEM.forEach(function(i){
+  var p=POSTS[i];
+  var b=el('button','tile');b.type='button';b.style.background=p.bg||'#1C241F';
+  b.setAttribute('aria-label','Abrir post de '+p.dia);
+  b.innerHTML=(p.img?'<img src="'+p.img+'" alt="" style="object-position:'+(p.pos||'50% 50%')+'">':'')+(p.fmt==='Carrossel'?IC_CAR:IC_REEL);
+  b.onclick=function(){abrir(i)};
+  grade.appendChild(b);
+});
+for(var k=0;k<5;k++)grade.appendChild(el('div','antigo'));
+function post(i){
+  var p=POSTS[i], video=p.fmt!=='Carrossel';
+  var raw=p.slides||[[p.titulo,p.bg,p.img,p.pos]];
+  var w=el('div','post');
+  w.appendChild(el('div','ph','<img src="img/retrato.jpg" alt=""><b>laisaguiar.rubens</b><svg width="20" height="20" viewBox="0 0 24 24" fill="#1C241F" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>'));
+  var m=el('div','midia');m.style.aspectRatio=video?'9 / 16':'4 / 5';
+  var tr=el('div','trilho');
+  raw.forEach(function(r){var s=el('div','slide');s.style.background=r[1]||'#1C241F';if(r[2])s.innerHTML='<img src="'+r[2]+'" alt="'+esc(r[0])+'" draggable="false" style="object-position:'+(r[3]||'50% 50%')+'">';tr.appendChild(s)});
+  m.appendChild(tr);w.appendChild(m);
+  var a=el('div','acoes');a.appendChild(el('div',null,ACOES));
+  var pts=el('div','pontos');a.appendChild(pts);
+  var sv=el('div',null,SALVAR);sv.style.justifyContent='flex-end';a.appendChild(sv);w.appendChild(a);
+  var n=raw.length,k=0;
+  function ir(j){k=Math.max(0,Math.min(n-1,j));tr.style.transform='translateX('+(-100*k)+'%)';[].forEach.call(pts.children,function(c,x){c.className=x===k?'on':''})}
+  if(n>1){raw.forEach(function(_,j){var d=el('button',null,'<span></span>');d.type='button';d.setAttribute('aria-label','Foto '+(j+1));d.onclick=function(){ir(j)};pts.appendChild(d)});
+    var x0=null;m.style.cursor='grab';
+    m.addEventListener('pointerdown',function(e){x0=e.clientX});
+    m.addEventListener('pointerup',function(e){if(x0==null)return;var dx=e.clientX-x0;x0=null;if(dx<-40)ir(k+1);else if(dx>40)ir(k-1)});
+    ir(0);}
+  var dia=parseInt(p.dia.split('· ')[1],10);
+  w.appendChild(el('p','leg','<b>laisaguiar.rubens</b> '+esc(p.legenda)));
+  w.appendChild(el('p','data',dia+' de dezembro'));
+  return w;
+}
+function abrir(i){
+  var l=document.getElementById('lista');l.innerHTML='';
+  ORDEM.slice(ORDEM.indexOf(i)).forEach(function(j){l.appendChild(post(j))});
+  document.getElementById('perfil').className='oculto';document.getElementById('posts').className='';window.scrollTo(0,0);
+}
+document.getElementById('voltar').onclick=function(){document.getElementById('posts').className='oculto';document.getElementById('perfil').className='';window.scrollTo(0,0)};
+</script>
+</body>
+</html>
